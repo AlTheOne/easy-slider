@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  height: 100vh;
+  display: flex;
+  flex-basis: 25%;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bad Script", cursive;
+  font-size: 2em;
+  text-shadow: 0 0 10px #000;
+  transition: all 0.2s;
+}
+.item:hover {
+  background-color: green;
+  flex-basis: 100%;
+}
+.item-1 {
+  background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/9ec04df6-7a23-477a-bbbd-ed5c03e6ee17/d713qau-fa6e0683-93a3-4866-8e65-23b7ca70954f.jpg) no-repeat center center;
+  background-size: cover;
+}
+.item-2 {
+  background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/9ec04df6-7a23-477a-bbbd-ed5c03e6ee17/d6y1loo-7b2fdc1a-35dd-4936-8597-3ceccf3f480e.jpg) no-repeat center center;
+  background-size: cover;
+}
+.item-3 {
+  background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/9ec04df6-7a23-477a-bbbd-ed5c03e6ee17/d5rsezm-8017af5e-e78f-4ab3-8065-1665f26f0447.jpg) no-repeat center center;
+  background-size: cover;
+}
+.item-4 {
+  background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/54fe4064-42ac-437a-9c8c-602f8880c149/d3i56el-7ed9310b-76db-4d92-a77f-197a58f24763.jpg/v1/fill/w_1280,h_720,q_70,strp/wallpaper_3_by_ultrainferno_d3i56el-fullview.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+@media (max-width: 640px) {
+  .slide {
+    height: 100vh;
+    flex-flow: column;
+  }
+
+  .item {
+    width: 100%;
+  }
+  .item:hover {
+    flex-grow: 30%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
